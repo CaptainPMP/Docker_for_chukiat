@@ -1,3 +1,5 @@
+# Command for using chukiat images in docker
+
 - docker build . -t chukiat
 - docker run -it -h Pawinnarut --name chukiat_project chukiat bash
 - hello
