@@ -9,6 +9,7 @@ RUN apt update \
  && rm -rf /var/lib/apt/lists/*
 RUN pip install pandas
 RUN gcc /root/afork.c -o /root/afork
+RUN gcc /root/bfork.c -o /root/bfork
 RUN gcc /root/csine.c -o /root/hello -lm
 RUN wget https://files.grouplens.org/datasets/movielens/ml-latest-small.zip -P /root
 RUN unzip /root/ml-latest-small.zip -d /root
